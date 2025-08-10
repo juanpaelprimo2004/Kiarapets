@@ -1,0 +1,125 @@
+/*importing  google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat+Alternates:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Libertinus+Serif:ital,wght@0,400;1,400;1,600;1,700&family=Montserrat+Alternates:wght@400;500;600&family=Playwrite+AU+QLD:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+:root {
+    /*colors*/
+    --white-color: #fff ; 
+    --azul: #1fafbf;
+    --verde-azulado: #8ccdb0 ; 
+    --cian-apagado: #54a4a6; 
+
+    /*font sizes */
+
+    --font-size-m: 1.12rem;
+    --font-size-l: 1.5rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 2.3rem;
+
+    /*font weights */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-semibold: 700;
+
+    /*border radius*/
+    --border-radius-s: 8px;
+    --border-radius-m: 30px;
+    --border-radius-circle: 50%px;
+
+    /*Site max widht*/
+    --site-max-width: 1300px ; 
+}
+
+/*Styles for the hole page*/
+
+body{
+    background: url(./media/background00.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px; 
+}
+
+header .navbar{
+  display: flex; 
+  align-content: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto ;
+   
+}
+
+.navbar .logo {
+   font-size: var(--font-size-xl); 
+   font-weight: var(--font-weight-medium);
+}
+
+.navbar .logo span{
+   color: var(--azul)
+}
+
+.navbar .menu-links{
+ display: flex;
+ gap: 40px;
+ list-style: none;
+}
+ 
+.navbar a{
+    color: var(--white-color);
+    text-decoration: none;
+    transition: 0.4 s ease;
+}
+
+.navbar a:hover {
+    color: var(--white-color);
+    background-color: var(--cian-apagado);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.hero-section{
+    height: 100vh;
+    display: flex;
+    align-items: center; 
+    padding: 0 20px;
+}
+
+.hero-section .content {
+ color: var(--white-color);
+ max-width: 600px;
+ font-size: 2.5rem;
+ font-weight: var(--font-weight-medium);
+}
+
+.hero-section .content h2{
+    font-family: "Grechen Fuemen",cursive;
+    font-size: var(--font-size-xxl);
+    margin-top: 15px;
+    max-width: 600px;
+}
+
+
+.hero-section .content button{
+    background: var(--white-color);
+    outline: none;
+    font-size: var(--font-size-m);
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+}
