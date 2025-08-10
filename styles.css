@@ -85,7 +85,7 @@ header .navbar{
     transition: 0.4 s ease;
 }
 
-.navbar a:hover {
+.navbar .menu-links a:hover {
     color: var(--white-color);
     background-color: var(--cian-apagado);
     padding: 15px;
@@ -116,10 +116,19 @@ header .navbar{
 
 
 .hero-section .content button{
-    background: var(--white-color);
-    outline: none;
-    font-size: var(--font-size-m);
-    padding: 12px 30px;
-    border-radius: 6px;
-    cursor: pointer;
+background: var(--azul);
+outline: none;
+border: none;
+font-size: 1rem;
+font-weight: 500;
+margin-top: 38px; 
+padding: 12px 30px; 
+border-radius: 6px; 
+cursor: pointer; 
+transition: 0.2s ease;
+}
+
+.hero-section .content button:hover {
+    color: var(--white-color); 
+    background: var(--verde-azulado) ;
 }
