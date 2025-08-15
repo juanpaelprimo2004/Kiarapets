@@ -20,6 +20,19 @@ section{
     padding: 2rem 9%;
 }
 
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 51, 153,.05);
+}
+
+.heading span{
+    color: var(--verde-azulado);
+}
+
 .btn{
     display: inline-block;
     margin-top: 1rem;
@@ -213,5 +226,6 @@ header .ri-file-list-line{
  padding: 1rem 0;
  line-height: 1.5;
 }
+
 
 
