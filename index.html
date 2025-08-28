@@ -4,51 +4,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Kiara pets</title>
 </head>
 <body>
     <header>
-        <input type="checkbox" name="" id="toggler">
-        <label for="toggler" class="fas fa-bars"><i class="ri-file-list-line"></i></label>
+        <input type="checkbox" id="toggler">
+        <label for="toggler"><i class="ri-file-list-line"></i></label>
 
         <a href="#" class="logo">Kiara pets <span>.</span></a>
 
         <nav class="navbar">
             <a href="#home">Inicio</a>
-            <a href="#veterinaria">veterinaria</a>
+            <a href="#veterinaria">Veterinaria</a>
             <a href="#spa">Spa</a>
             <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Citas</a>
         </nav>
     </header>
 
     <!-- home section starts -->
-
     <section class="home" id="home">
         <div class="content">
             <h3>Servicios</h3>
             <span>natural & beautiful flowers</span>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, doloribus. Vel sunt quibusdam incidunt. Eum blanditiis repellat expedita dignissimos cumque iste sit! Pariatur reprehenderit sed id a. Iusto autem nostrum dignissimos modi id obcaecati necessitatibus minus mollitia ratione quos non iure alias neque aliquam optio quis.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, doloribus. Vel sunt quibusdam incidunt...</p>
             <a href="#" class="btn">shop now</a>
         </div>
     </section>
 
     <!-- about section starts -->
-
     <section class="about" id="veterinaria">
-        <h1 class="heading"><span>about</span> us</h1>
-        <div class="row">
-            <div class="video-container">
-                <video src="" loop autoplay muted></video>
-                <h3>best flower sellers</h3>
+        <h1 class="heading"><span>Veterinaria</span></h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="./media/vet1.jpg" alt="Consulta general">
+                <h3>Consulta General</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec nulla ut eros blandit.</p>
             </div>
-            <div class="content">
-                <h3>why choose us?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque magnam expedita quibusdam consequuntur libero molestias ut dolor quos quidem eos doloremque, quam similique odio corrupti consequatur veniam omnis vero voluptatibus. Laboriosam commodi dolores iusto! Neque, cum voluptate? Vitae, tempora laboriosam.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit porro expedita, quibusdam quo hic autem qui eligendi ex commodi neque!</p>
-                <a href="#" class="btn">learn more</a>
+            <div class="card">
+                <img src="./media/vet2.jpg" alt="Vacunación">
+                <h3>Vacunación</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec nulla ut eros blandit.</p>
+            </div>
+            <div class="card">
+                <img src="./media/vet3.jpg" alt="Emergencias">
+                <h3>Emergencias 24h</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec nulla ut eros blandit.</p>
             </div>
         </div>
     </section>
+
+    <!-- Spa section -->
+    <section class="about" id="spa">
+        <h1 class="heading"><span>Spa</span></h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="./media/spa1.jpg" alt="Baño completo">
+                <h3>Baño Completo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec nulla ut eros blandit.</p>
+            </div>
+            <div class="card">
+                <img src="./media/spa2.jpg" alt="Corte de pelo">
+                <h3>Corte de Pelo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec nulla ut eros blandit.</p>
+            </div>
+            <div class="card">
+                <img src="./media/spa3.jpg" alt="Spa Relax">
+                <h3>Relax & Aromaterapia</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nec nulla ut eros blandit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de citas -->
+    <section id="contacto">
+        <h1 class="heading"><span>Solicitar</span> Cita</h1>
+        <form id="whatsappForm">
+            <input type="text" id="nombrePropietario" placeholder="Nombre del propietario" required>
+            <input type="text" id="nombreMascota" placeholder="Nombre de la mascota" required>
+            <input type="text" id="raza" placeholder="Raza" required>
+            <select id="servicio" required>
+                <option value="" disabled selected>Seleccione servicio</option>
+                <option value="spa">Spa</option>
+                <option value="veterinaria">Veterinaria</option>
+            </select>
+            <input type="date" id="fecha" required>
+            <button type="submit" class="btn">Enviar por WhatsApp</button>
+        </form>
+    </section>
+
+    <!-- Sobre Nosotros -->
+<section class="nosotros" id="nosotros">
+    <h1 class="heading"><span>Sobre</span> Nosotros</h1>
+
+    <!-- Misión -->
+    <div class="nosotros-row">
+        <div class="nosotros-img">
+            <img src="https://place-puppy.com/500x350" alt="Misión Kiara Pets">
+        </div>
+        <div class="nosotros-text">
+            <h3>Misión</h3>
+            <p>
+                Brindar atención veterinaria integral de excelencia, centrada en la prevención,
+                el diagnóstico preciso y el bienestar duradero de cada mascota. Promovemos una
+                tenencia responsable y fortalecemos el vínculo emocional entre humanos y mascotas
+                en un espacio cálido, humano, empático, lleno de amor y respeto.
+            </p>
+        </div>
+    </div>
+
+    <!-- Visión -->
+    <div class="nosotros-row reverse">
+        <div class="nosotros-img">
+            <img src="https://placekitten.com/500/350" alt="Visión Kiara Pets">
+        </div>
+        <div class="nosotros-text">
+            <h3>Visión</h3>
+            <p>
+                Ser para el 2030 el referente más confiable y humano en el cuidado integral de
+                mascotas de compañía, reconocidos por la calidad médica, la innovación diagnóstica
+                y la calidez de cada experiencia, donde la salud, el respeto y el amor por cada
+                vida animal sean el motor de nuestra razón de ser.
+            </p>
+        </div>
+    </div>
+
+    <!-- Propuesta de Valor -->
+    <div class="nosotros-row">
+        <div class="nosotros-img">
+            <img src="https://place-puppy.com/501x351" alt="Propuesta de Valor Kiara Pets">
+        </div>
+        <div class="nosotros-text">
+            <h3>Propuesta de Valor</h3>
+            <p>
+                En Kiara Pets Veterinaria cuidamos a tus mascotas con amor y dedicación,
+                brindándoles atención humana, precisa y de alta calidad para mejorar y prevenir
+                su salud y bienestar. Nuestro equipo de profesionales apasionados y expertos se
+                compromete a que tu experiencia sea excepcional, con un trato amable y respetuoso
+                en un lugar tranquilo y confiable, garantizando que tu hijo peludo esté en las
+                mejores manos, porque juntos somos una gran familia.
+            </p>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p><i class="ri-map-pin-line"></i> Calle 123 #45-67, Bogotá, Colombia</p>
+        <div class="socials">
+            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-whatsapp-fill"></i></a>
+        </div>
+    </footer>
+
+    <!-- Script WhatsApp -->
+    <script>
+        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            let nombre = document.getElementById('nombrePropietario').value;
+            let mascota = document.getElementById('nombreMascota').value;
+            let raza = document.getElementById('raza').value;
+            let servicio = document.getElementById('servicio').value;
+            let fecha = document.getElementById('fecha').value;
+
+            let mensaje = `Hola, soy ${nombre} quisiera averiguar una cita de ${servicio} para mi ${raza} ${mascota} el día ${fecha}`;
+            let url = `https://wa.me/573188118418?text=${encodeURIComponent(mensaje)}`;
+            window.open(url, '_blank');
+        });
+    </script>
 </body>
 </html>
